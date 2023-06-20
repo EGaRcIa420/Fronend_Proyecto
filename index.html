@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gimnasio THOR</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+    .card {
+      height: 100%;
+    }
+
+    .card-image img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      min-height: 150px;
+    }
+
+    .card-title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .card-content p {
+      font-weight: bold;
+    }
+
+    nav {
+      margin-bottom: 0;
+    }
+
+    .contenido {
+      background-image: url('../Imagenes/img1.jpeg');
+      background-size: cover;
+      background-position: center;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .contenido h1.display-4 {
+      font-weight: bold;
+      font-family: 'Arial', sans-serif;
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .contenido p.lead {
+      font-size: 20px;
+      font-style: italic;
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Gimnasio THOR</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="listarDatosser.html">Servicios</a></li>
+        <li><a href="listarDatospaq.html">Paquetes</a></li>
+        <li><a href="listarDatosci.html">Citas</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="contenido">
+    <div class="container">
+      <h1 class="display-4">Bienvenido a Gimnasio THOR</h1>
+      <p class="lead">¡Transforma tu cuerpo y mejora tu salud!</p>
+    </div>
+  </div>
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Nuestras Instalaciones</h2>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="../Imagenes/imgmaq.jpeg" alt="Imagen 1">
+            </div>
+            <div class="card-content">
+              <span class="card-title black-text">Área de Pesas</span>
+              <p>Contamos con una amplia variedad de equipos de pesas para tu entrenamiento de fuerza.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="../Imagenes/imgcomi.jpeg" alt="Imagen 2">
+            </div>
+            <div class="card-content">
+              <span class="card-title black-text">Nutrición</span>
+              <p>Disfruta de nuestra evaluación de nutrición para una buena salud y mantenerte en forma.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="../Imagenes/imgsalo.jpeg" alt="Imagen 3">
+            </div>
+            <div class="card-content">
+              <span class="card-title black-text">Salón de Clases</span>
+              <p>Participa en nuestras diversas clases grupales dirigidas por expertos instructores.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

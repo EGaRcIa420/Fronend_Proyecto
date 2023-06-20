@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">          
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css">
+    <title>Registrar Cita</title>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Gimnasio THOR</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="listarDatospaq.html">Paquetes</a></li>
+        <li><a href="listarDatosci.html">Citas</a></li>
+      </ul>
+    </div>
+</nav>
+    <div class="container">
+      <h1>Registrar Cita</h1>
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="nombreYapellido" type="text" class="validate">
+                  <label for="nombreYapellido">Nombre y Apellido</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">contact_phone</i>
+                  <input id="telefono" type="number" class="validate">
+                  <label for="telefono">Telefono</label>
+                </div>
+              </div>
+              <div class="row" id="serviciosContainer">
+                <!-- Opciones de servicio se generarán dinámicamente aquí -->
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">date_range</i>
+                  <input id="fecha" type="date" class="validate">
+                  <label for="fecha">Fecha</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">access_time</i>
+                  <input id="hora" type="time" class="validate">
+                  <label for="hora">Hora</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">not_interested</i>
+                  <input id="restrincciones" type="text" class="validate">
+                  <label for="restrincciones">Restrincciones</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <select class="browser-default" id="estado">
+                    <option value="" disabled selected>Seleccionar el estado</option>
+                    <option value="Asistio">Asistio</option>
+                    <option value="Pendiente">Pendiente</option>
+                    <option value="Cancelo">Cancelo</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                    <button id="btnRegistrar" class="btn green waves-effect waves-light" type="button" name="action">Registrar
+                        <i class="material-icons right">send</i>
+                    </button>
+                    <a class="waves-effect waves-light btn red" href="listarDatosci.html"><i class="material-icons right">send</i>Cancelar</a>
+                  </div>
+              </div>
+            </form>
+          </div>
+    </div>
+    <script src="js/funcionesci.js"></script>    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
