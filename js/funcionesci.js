@@ -23,7 +23,7 @@ const listarDatosci = async() => {
               `<td>${citas.restrincciones}</td>` +
               `<td>${citas.estado}</td>` +
               `<td><a class="waves-effect waves-light btn orange" href="editarCita.html"><i class="material-icons left">create</i>Editar</a>` +
-              `<button id="btnEliminar" class="btn red waves-effect waves-light" onclick='eliminar("${citas._id}")' type="button" name="action">Eliminar
+              ` <button id="btnEliminar" class="btn red waves-effect waves-light" onclick='eliminar("${citas._id}")' type="button" name="action">Eliminar
               <i class="material-icons left">delete</i></button>                  
               </td></tr>`;
           body.innerHTML = respuesta;
@@ -165,7 +165,7 @@ const actualizar = async () => {
   let _restrincciones = document.getElementById('restrincciones').value;
   let _estado = document.getElementById('estado').value;
 
-  let fechaISO = new Date(_fecha).toISOString().split('T')[0];
+  // let fechaISO = new Date(_fecha).toISOString().split('T')[0];
 
   // Validación de campos vacíos
   if (

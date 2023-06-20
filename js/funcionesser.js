@@ -126,6 +126,51 @@ const actualizar = async () => {
   let _precio= document.getElementById('precio').value
   let _estado= document.getElementById('estado').value 
   
+  // Validación de campos vacíos
+  if (
+    _servicios.trim() === '' ||
+    _clases.trim() === '' ||
+    _precio.trim() === '' ||
+    _estado.trim() === ''
+  ) {
+    Swal.fire(
+      'Por favor, complete todos los campos',
+      '',
+      'error'
+    );
+    return;
+  }
+
+  // Validación de servicios
+  if (!/^[A-Za-z0-9]+$/.test(_servicios)) {
+    Swal.fire(
+      'El nombre de servicio solo debe contener letras y números',
+      '',
+      'error'
+    );
+    return;
+  }
+
+  // Validación del precio
+  if (!/^\d+$/.test(_precio)) {
+    Swal.fire(
+      'El precio debe ser un número entero',
+      '',
+      'error'
+    );
+    return;
+  }
+
+  // Validación del rango del precio
+  if (_precio < 6000 || _precio > 1000000) {
+    Swal.fire(
+      'El precio debe estar entre 6000 y 1000000',
+      '',
+      'error'
+    );
+    return;
+  }
+
   let servicio = {
     servicios: _servicios,
     clases:_clases,
